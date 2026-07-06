@@ -1,0 +1,12 @@
+{
+  "name": "tourism-analytics-saas",
+  "version": "1.0.0",
+  "description": "Full-stack SaaS app with interactive Power BI Dashboard",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend --no-audit --no-fund && npm install --prefix frontend --no-audit --no-fund",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
